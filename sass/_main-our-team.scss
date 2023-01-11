@@ -1,0 +1,86 @@
+.main-3 {
+    background-color: var(--secondary-bg-color);
+    padding: 94px 0px;
+
+    .container {
+            width: 1200px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+    } 
+
+        .our-team-text {
+            margin-bottom: 50px;
+            font-size: 36px;
+            line-height: 1.166;
+            text-align: center;
+            letter-spacing: 0.03em;
+            white-space: nowrap;
+            color: var(--primary-text-color);
+        }
+
+        & .cards {
+            display: flex;
+            justify-content: center;
+
+            .teammate {
+                    width: 270px;
+                    margin-right: 30px;
+                    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+                    border-radius: 0px 0px 4px 4px;
+                    background-color: var(--primary-white-color);
+
+                    .teammate-padding {
+                            padding: 30px 0px;
+
+                            .igor-small, .olga-small, .kolya-small, .misha-small {
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 1.187;
+                                    text-align: center;
+                                    letter-spacing: 0.03em;
+                                    color: var(--primary-text-color);
+                                }
+
+                            .igor-work, .olga-work, .kolya-work, .misha-work {
+                                margin-top: 10px;
+                                margin-bottom: 16px;
+                                font-size: 16px;
+                                line-height: 1.187;
+                                text-align: center;
+                                letter-spacing: 0.03em;
+                                color: var(--secondary-text-color);
+                            }
+
+                            .team-list {
+                                display: flex;
+                                justify-content: center;
+
+                                .team-item:not(:last-child) {
+                                        margin-right: 10px;
+                                    }
+                            }
+                        }
+                }
+        }
+
+               & .team-link {
+                    height: 44px;
+                    width: 44px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+
+                .team-list .team-link:hover,
+                .team-list .team-link:focus {
+                    background-color: var(--hover-icon);
+                }
+
+                .team-link:hover, .team-link:focus {
+                    fill: var(--primary-white-color);
+                }
+}

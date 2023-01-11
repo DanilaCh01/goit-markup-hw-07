@@ -1,0 +1,51 @@
+.main-1 {
+    background-color: var(--primary-white-color);
+    padding: 94px 0px;
+
+    .container {
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    & .list {
+        display: flex;
+        
+        .osobennosti {
+                width: 270px;
+
+                .uvaga, .punct, .plan, .tech {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    line-height: 1.142;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    color: var(--primary-text-color);
+                }
+
+                .text1, .text2, .text3, .text4 {
+                    line-height: 1.714;
+                    letter-spacing: 0.03em;
+                    color: var(--secondary-text-color);
+                }
+
+                .icon-box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 120px;
+                    margin-bottom: 30px;
+                    background-color: var(--secondary-bg-color);
+                }
+            }
+
+        & .osobennosti:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+
+}
+
