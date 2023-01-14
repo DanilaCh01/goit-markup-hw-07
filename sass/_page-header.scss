@@ -1,14 +1,10 @@
 .header {
     border-bottom: 1px solid #ECECEC;
-    .container {
+    .header-content {
         display: flex;
         justify-content: space-between;
-        
-        width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+
+        @extend .container
     }
 }
 

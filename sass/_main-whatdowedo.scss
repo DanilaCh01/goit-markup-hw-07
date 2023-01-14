@@ -4,11 +4,6 @@
 }
 
 .what-we-do {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 
     &__header {
         margin-bottom: 50px;
@@ -54,4 +49,6 @@
             user-select: none;
         }
     }
+    
+    @extend .container
 }
