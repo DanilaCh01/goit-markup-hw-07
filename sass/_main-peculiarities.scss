@@ -1,22 +1,26 @@
-.main-1 {
+.our-peculiarities-section {
     background-color: var(--primary-white-color);
     padding: 94px 0px;
+}
 
-    .container {
-        width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+.peculiarities-content {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &__header {
+
     }
 
-    & .list {
-        display: flex;
-        
-        .osobennosti {
+        &__list {
+            display: flex;
+    
+            &-element {
                 width: 270px;
-
-                .uvaga, .punct, .plan, .tech {
+    
+                .peculiarities-main-text {
                     margin-bottom: 10px;
                     font-size: 14px;
                     line-height: 1.142;
@@ -24,28 +28,31 @@
                     text-transform: uppercase;
                     color: var(--primary-text-color);
                 }
-
-                .text1, .text2, .text3, .text4 {
+    
+                .peculiarities-main-additional {
                     line-height: 1.714;
                     letter-spacing: 0.03em;
                     color: var(--secondary-text-color);
                 }
-
-                .icon-box {
+    
+                .peculiarities-box {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     height: 120px;
                     margin-bottom: 30px;
                     background-color: var(--secondary-bg-color);
+
+                    .icon {
+                            fill: var(--primary-icon);
+                            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        }
                 }
             }
-
-        & .osobennosti:not(:last-child) {
+    
+                &-element:not(:last-child) {
                 margin-right: 30px;
             }
         }
-
-
 }
 

@@ -139,6 +139,7 @@
 }
 
 .form-la>.icon {
+    fill: var(--primary-text-color);
     position: absolute;
     left: 12px;
     bottom: 14px;
@@ -208,7 +209,6 @@
     text-align: center;
 }
 
-/*             0000000000000000000000000000000000000000                   */
 .policy-box {
     display: block;
     text-align: center;

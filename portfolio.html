@@ -12,44 +12,43 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
     <title>Портфоліо</title>
   </head>
 
   <body>
     <!--header-->
-    <header class="header">
+     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <div class="logo-container">
-            <a href="./index.html" class="logo-1-1"
-              ><span class="logo-1-2">Web</span>Studio</a
-            >
+        <nav class="site-nav"><!--"nav"-->
+          <div class="site-nav__logo">
+            <a href="./index.html" class="site-nav__logo-type-1" 
+              ><span class="site-nav__logo-type-2">Web</span>Studio</a> <!--"logo-1-1", "logo-1-2"-->
           </div>
-          <ul class="nav-container">
-            <li class="item">
-              <a href="./index.html" class="nav-links">Студія</a>
+          <ul class="site-nav__list"><!--"item"-->
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студія</a> <!--"nav-links"-->
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="nav-links current">Портфоліо</a>
+            <li class="site-nav__item"><!--"item"-->
+              <a href="./portfolio.html" class="site-nav__link current">Портфоліо</a> <!--"nav-links"-->
             </li>
-            <li class="item">
-              <a href="./contacts.html" class="nav-links">Контакти</a>
+            <li class="site-nav__item"><!--"item"-->
+              <a href="./contacts.html" class="site-nav__link">Контакти</a> <!--"nav-links"-->
             </li>
           </ul>
         </nav>
-        <ul class="contacts list-1">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="mail-tel-links">
-              <svg class="icon" width="16px" height="12px">
+        <ul class="site-contacts"> <!--"contacts list-1"-->
+          <li class="site-contacts__item"> <!--"item"-->
+            <a href="mailto:info@devstudio.com" class="site-contacts__link"> <!--"mail-tel-links"-->
+              <svg class="icon" width="16px" height="12px"> <!--"icon"-->
                 <use href="./images/icons.svg/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="mail-tel-links">
-              <svg class="icon" width="10px" height="16px">
+          <li class="site-contacts__item"> <!--"contacts list-1"-->
+            <a href="tel:+380961111111" class="site-contacts__link"> <!--"mail-tel-links"-->
+              <svg class="icon" width="10px" height="16px"> <!--"icon"-->
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
                 ></use>
